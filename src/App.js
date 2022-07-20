@@ -139,7 +139,7 @@ function formatOperand(operand) {
   if (decimal == null) {
     return INTEGER_FORMATTER.format(integer)
   }
-  return `$}${INTEGER_FORMATTER.format(integer)}${decimal}`
+  return `${INTEGER_FORMATTER.format(integer)}.${decimal}`
 }
 
 const App = () => {
